@@ -75,6 +75,9 @@ console.log(burger.discount("student"));
 
 
 ///////////////Reviews (MVP)///////////////////
+
+// const djfkljskdfjlkdsf = 1;
+
 const reviews = [
     {name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and wonderful vegan options!"},
     {name: "Jack", rating: 3, feedback:"A little too hipster for my taste, but the burger was decent, if overpriced"},
@@ -84,7 +87,19 @@ const reviews = [
     {name: "Julius", rating: 2, feedback: "I was largely unimpressed by this venue. Nothing special on the menu and too expensive. The atmosphere is polarizing, and not for me, but I think some would like it." },
     {name: "Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."},
     {name: "Reyna", rating: 3.5, feedback: ""},
+    // {djfkljskdfjlkdsf}
 ]
+
+// {name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and wonderful vegan options!"};
+
+
+// function createObject() {
+//   const newObj = {name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and wonderful vegan options!"}
+//   return newObj;
+// }
+
+// const aaa = createObject();
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Using the reviews array above:
@@ -115,9 +130,33 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+// w/o return
+function addReview(reviews, name, rating, feedback){
+  const a = {name, rating, feedback};
+  reviews.push(a);
+  return reviews;
 }
+
+console.log(addReview(reviews, 'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
+
+
+
+
+// function addReview(array, name, rating, feedback){
+//   const newReview = {
+//     name,
+//     rating,
+//     feedback
+//   }
+//   array.push(newReview);
+//   return array;
+// }
+// console.log(addReview(array,'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
+
+
+
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
